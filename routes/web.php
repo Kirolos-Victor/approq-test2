@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/all-data',[\App\Http\Controllers\CompanyController::class,'fetchAllData']);
-Route::post('upload-pdf',[\App\Http\Controllers\UploadController::class,'uploadFile']);
+Route::post('/upload-pdf',[\App\Http\Controllers\UploadController::class,'uploadFile']);
